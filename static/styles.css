@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     display: flex;
     justify-content: center;
@@ -7,23 +6,28 @@ body {
     margin: 0; /* Remove default body margin */
 }
 
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#puzzle-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children */
+}
+
 #crossword {
-    /* Add any specific styles for your crossword container here */
+    margin-bottom: 20px; /* Adjust as needed */
 }
 
+#buttons-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Space between buttons */
+}
 
-table {
-    border-collapse: collapse;
-}
-td {
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    text-align: center;
-    vertical-align: middle;
-}
-.blocked {
-    background-color: #000;
+#clues-container {
+    margin-top: 20px;
 }
 
 .crossword-grid {
@@ -31,26 +35,20 @@ td {
 }
 
 .crossword-grid td {
-    border: 1px solid #000;
     width: 30px; /* Adjust based on your preference */
     height: 30px; /* Adjust based on your preference */
+    border: 1px solid #000; /* Ensure every cell has a border */
+    text-align: center;
+    vertical-align: middle;
 }
 
 .crossword-grid td input {
     width: 100%;
     height: 100%;
-    border: none;
+    border: none; /* Remove input border to blend with the cell */
     text-align: center;
 }
 
 .crossword-grid td.blocked {
     background-color: #aaa; /* Color for blocked cells */
-}
-
-
-input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    text-align: center;
 }

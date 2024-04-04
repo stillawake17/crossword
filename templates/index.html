@@ -6,29 +6,39 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <div id="puzzle-container">
+        <h1>Crossword 001</h1>
+        <div id="crossword">
+            <table class="crossword-grid">
+                <tr>
+                    <td><input type="text"></td>
+                    <td class="blocked"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td class="blocked"></td>
+                    <td><input type="text"></td>
+                    <td class="blocked"></td>
+                </tr>
+            </table>
+        </div>
 
-<div id="crossword">
-    <table class="crossword-grid">
-        <tr>
-            <td><input type="text"></td>
-            <td class="blocked"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td class="blocked"></td>
-            <td><input type="text"></td>
-            <td class="blocked"></td>
-        </tr>
-    </table>
+
+    <div id="buttons-container">
+        <button onclick="checkAnswers()">Check Answers</button>
+        <button onclick="clearCrossword()">Clear All</button>
+    </div>
+</div>
+<div id="clues-container">
+    <!-- Clues will be listed here -->
 </div>
 
-<button onclick="checkAnswers()">Check Answers</button>
-<Br>
+
 <div id="feedback" style="margin-top: 20px;"></div>
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
