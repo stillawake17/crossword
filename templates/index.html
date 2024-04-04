@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div id="crossword">
+    <table class="crossword-grid">
+        <tr>
+            <td><input type="text"></td>
+            <td class="blocked"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td class="blocked"></td>
+            <td><input type="text"></td>
+            <td class="blocked"></td>
+        </tr>
+    </table>
+</div>
+
+<button onclick="checkAnswers()">Check Answers</button>
+<Br>
+<div id="feedback" style="margin-top: 20px;"></div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+
+</body>
+</html>

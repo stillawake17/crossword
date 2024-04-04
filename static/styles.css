@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use the full height of the viewport */
+    margin: 0; /* Remove default body margin */
+}
+
+#crossword {
+    /* Add any specific styles for your crossword container here */
+}
+
+
+table {
+    border-collapse: collapse;
+}
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+}
+.blocked {
+    background-color: #000;
+}
+
+.crossword-grid {
+    border-collapse: collapse;
+}
+
+.crossword-grid td {
+    border: 1px solid #000;
+    width: 30px; /* Adjust based on your preference */
+    height: 30px; /* Adjust based on your preference */
+}
+
+.crossword-grid td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+}
+
+.crossword-grid td.blocked {
+    background-color: #aaa; /* Color for blocked cells */
+}
+
+
+input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+}
